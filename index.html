@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Human Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-body">
+
+        <input type="text" id="screen" class="screen-display" readonly>
+
+        <div class="button-grid">
+
+            <button  class="btn" onclick="clearScreen()">AC</button>
+            <button class="btn"  onclick="calculateSin()">sin</button>
+            <button class="btn" onclick="calculateCos()">cos</button>
+            <button class="btn" onclick="calculateTan()">tan</button>
+
+            <button  class="btn" onclick="openCurrencyBox()">💱</button>
+            <button  class="btn" onclick="squareNumber()">x²</button>
+            <button  class="btn" onclick="squareRoot()">√</button>
+            <button class="btn" onclick="pressln()">ln</button>
+
+
+            <button class="btn" onclick="pressOperator('(')">(</button>
+            <button class="btn" onclick="pressOperator(')')">)</button>
+            <button class="btn" onclick="pressOperator('**')">^</button>
+            <button class="btn" onclick="pressOperator('+')">M+</button>
+
+            
+            <button  class="btn" onclick="pressNumber('7')">7</button>
+            <button class="btn" onclick="pressNumber('8')">8</button>
+            <button class="btn" onclick="pressNumber('9')">9</button>
+            <button class="btn" onclick="pressOperator('*')">×</button>
+            
+            <button class="btn" onclick="pressNumber('4')">4</button>
+            <button class="btn" onclick="pressNumber('5')">5</button>
+            <button class="btn" onclick="pressNumber('6')">6</button>
+            <button class="btn" onclick="pressOperator('-')">−</button>
+            
+            <button class="btn" onclick="pressNumber('1')">1</button>
+            <button class="btn" onclick="pressNumber('2')">2</button>
+            <button class="btn" onclick="pressNumber('3')">3</button>
+            <button class="btn" onclick="pressOperator('+')">+</button>
+            
+            <button class="btn" onclick="pressNumber('0')">0</button>
+            <button class="btn" onclick="pressDot()">.</button>
+            <button  class="btn" onclick="deleteLast()">DEL</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+
+        </div>
+    </div>
+
+
+<!-- Currency Converter Popup -->
+
+    <div class="currency-box" id="currencyBox">
+
+        <h3>Currency Converter</h3>
+
+        <select id="fromCurrency">
+      
+        </select>
+
+        <select id="toCurrency">
+        </select>
+
+        <br><br>
+
+        <button onclick="convertMoney()">Convert</button>
+        <button onclick="closeCurrencyBox()">Close</button>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
